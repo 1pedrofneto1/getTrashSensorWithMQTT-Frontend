@@ -1,0 +1,16 @@
+.container {
+  margin: 1rem;
+}
+
+input {
+  pointer-events: none;
+  outline: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,48 @@
+header {
+  background-color: #e74646;
+  padding: 2.5rem 0;
+  text-align: center;
+  text-decoration: underline;
+  color: #fff3e2;
+}
+
+.container {
+  background-color: #fff3e2;
+  height: 46.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weightContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  margin: 0 5.8rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+img {
+  width: 15rem;
+  height: 15rem;
+}
+
+footer {
+  background-color: #fa9884;
+  padding: 1.5rem 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    height: 33rem;
+  }
+  .containerButton {
+    display: flex;
+    margin: 0 0 1rem 3.5rem;
+  }
+}
