@@ -32,8 +32,10 @@ function App() {
       })
         .then((response) => response.json())
         .then((data) => {
-          setValueWeight(data.weight);
-          const newWeight = data.weight;
+          setValueWeight(data.currentWeight);
+
+          const newWeight = data.currentWeight;
+
           if (newWeight <= 0) {
             setLevelBarImage(levelBar);
             setValueWeight(0);
@@ -46,6 +48,7 @@ function App() {
           }
         })
         .catch((err) => console.log(err));
+
       fetch("http://localhost:3333/level", {
         method: "GET",
         headers: {
@@ -54,8 +57,10 @@ function App() {
       })
         .then((response) => response.json())
         .then((data) => {
-          setValueLevel(data.level);
-          const newLevel = data.level;
+          setValueLevel(data.usedLevel);
+
+          const newLevel = data.usedLevel;
+
           if (newLevel <= 0) {
             setTrashImage(trash);
             setValueLevel(0);

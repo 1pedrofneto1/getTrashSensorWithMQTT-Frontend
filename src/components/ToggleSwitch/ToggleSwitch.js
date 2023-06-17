@@ -6,8 +6,11 @@ const ToggleSwitch = ({ attribute }) => {
 
   const handleCheck = () => {
     setIsCheked(!isChecked);
+
     const newChecked = !isChecked;
+
     const routeAttribute = attribute === "Nível" ? "level" : "weight";
+
     if (newChecked) {
       fetch(`http://localhost:3333/${routeAttribute}TurnOn`, {
         method: "POST",
